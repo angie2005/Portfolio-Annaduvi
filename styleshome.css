@@ -1,0 +1,146 @@
+
+:root{
+  --pink:#FD8BBC;
+  --pink-light:#f7cbe0;
+  --black:#111;
+  --white:#fff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: "Annie Use Your Telescope", cursive;
+  background:var(--pink);
+  color:var(--black);
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+.container{
+  width:100%;
+  max-width:1700px;
+  margin:auto;
+}
+
+/* ================= HEADER ================= */
+
+.header{
+  padding:20px 0;
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-family: "Annie Use Your Telescope", cursive;
+  font-size:60px;
+  font-weight:500;
+  letter-spacing:5px;
+}
+
+.menu{
+  width:40px ;
+  height: auto;
+  cursor:pointer;
+}
+
+.socials{
+  display:flex;
+  gap:25px;
+  width:150px ;
+  height: auto;
+
+}
+
+.contenedor-foto {
+  position: relative;
+  width: 1500px;
+}
+
+.marco {
+  width: 100%;       
+  display: block;
+  }
+
+.foto-perfil {
+  position: absolute; 
+  top: 50%;          
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 90%;      
+  z-index: 100;       
+  }
+
+/* ================= ABOUT ================= */
+
+.about{
+  align-items:center;
+  padding:200px 100px;
+  display: flex;
+  align-items: center;
+  gap: 60px; 
+  }
+
+.profile-photo img{
+  border-radius:30px;
+  width:200px;
+  height: 200px;
+}
+
+.about-text{
+  font-family: "Annie Use Your Telescope", cursive;
+  font-size:40px;
+  line-height:1.5;
+}
+
+/* ================= NEWSLETTER ================= */
+
+.newsletter{
+  padding:59px 20px;
+}
+
+.newsletter-box{
+  max-width:1000px;
+  margin:auto;
+  border:3px solid #241E1E;
+  border-radius:999px;
+  display:flex;
+  overflow:hidden;
+  font-family: "Annie Use Your Telescope", cursive;
+}
+
+.newsletter-box span{
+  flex:1;
+  padding:18px 30px;
+  font-size:32px;
+}
+
+.newsletter-box button{
+  border:none;
+  border-left:3px solid #241E1E;
+  background:transparent;
+  padding:18px 40px;
+  font-size:32px;
+  cursor:pointer;
+  font-family: "Annie Use Your Telescope", cursive;
+  }
+
+
+/* ================= FOOTER ================= */
+
+.footer{
+  text-align:center;
+  padding:35px 20px 55px;
+  font-family: "Annie Use Your Telescope", cursive;
+  font-size:28px;
+}

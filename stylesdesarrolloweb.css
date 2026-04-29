@@ -1,0 +1,190 @@
+/* --GENERAL-- */
+:root{
+  --pink:#FD8BBC;
+  --pink-light:#f7cbe0;
+  --black:#111;
+  --white:#fff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: "Annie Use Your Telescope", cursive;
+  background:var(--pink);
+  color:var(--black);
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+.container{
+  width:100%;
+  max-width:1700px;
+  margin:auto;
+}
+
+.header{
+  padding:20px 0;
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-family: "Annie Use Your Telescope", cursive;
+  font-size:60px;
+  font-weight:500;
+  letter-spacing:5px;
+}
+
+.menu{
+  width:40px ;
+  height: auto;
+  cursor:pointer;
+}
+
+.socials{
+  display:flex;
+  gap:25px;
+  width:150px ;
+  height: auto;
+
+}
+
+.contenedor-foto {
+  position: relative;
+  width: 1500px;
+}
+
+.marco {
+  width: 100%;       
+  display: block;
+  }
+
+.foto-perfil {
+  position: absolute; 
+  top: 50%;          
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 90%;      
+  z-index: 100;       
+  }
+
+/* GRID */
+.grid {
+  display: grid;
+  gap: 30px;
+  justify-content: center;
+}
+
+.divider {
+  margin: 30px 0 30px;
+  }
+
+  /* SECCIONES */
+.section {
+  padding: 100px;
+}
+
+.section h2 {
+  margin-bottom: 100px;
+  font-weight: 40;
+  }
+
+
+/* TELEFONOS */
+.phones {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+/* LAPTOPS */
+.laptops {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* DEVICE */
+.device {
+  display: flex;
+  justify-content: center;
+}
+
+.device img {
+  width: 200%;
+  max-width: 350px;
+}
+
+.celus img {
+  width: 200%;
+  max-width: 180px;
+}
+
+/* BOTONES */
+.center {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 10px;
+  border-radius: 100px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #FD6BA9;
+}
+
+
+
+  /*--NEWSLETTER--*/
+
+.newsletter{
+  padding:59px 20px;
+}
+
+.newsletter-box{
+  max-width:1000px;
+  margin:auto;
+  border:3px solid #241E1E;
+  border-radius:999px;
+  display:flex;
+  overflow:hidden;
+  font-family: "Annie Use Your Telescope", cursive;
+}
+
+.newsletter-box span{
+  flex:1;
+  padding:18px 30px;
+  font-size:32px;
+}
+
+.newsletter-box button{
+  border:none;
+  border-left:3px solid #241E1E;
+  background:transparent;
+  padding:18px 40px;
+  font-size:32px;
+  cursor:pointer;
+  font-family: "Annie Use Your Telescope", cursive;
+  }
+
+
+/*--FOOTER-- */
+
+.footer{
+  text-align:center;
+  padding:35px 20px 55px;
+  font-family: "Annie Use Your Telescope", cursive;
+  font-size:28px;
+}

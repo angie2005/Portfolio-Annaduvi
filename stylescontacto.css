@@ -1,0 +1,241 @@
+/* --GENERAL-- */
+:root{
+  --pink:#FD8BBC;
+  --pink-light:#f7cbe0;
+  --black:#111;
+  --white:#fff;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: "Annie Use Your Telescope", cursive;
+  background:var(--pink);
+  color:var(--black);
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+.container{
+  width:100%;
+  max-width:1700px;
+  margin:auto;
+}
+
+.header{
+  padding:20px 0;
+}
+
+.nav{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-family: "Annie Use Your Telescope", cursive;
+  font-size:60px;
+  font-weight:500;
+  letter-spacing:5px;
+}
+
+.menu{
+  width:40px ;
+  height: auto;
+  cursor:pointer;
+}
+
+.socials{
+  display:flex;
+  gap:25px;
+  width:150px ;
+  height: auto;
+
+}
+
+.contenedor-foto {
+  position: relative;
+  width: 1500px;
+}
+
+.marco {
+  width: 100%;       
+  display: block;
+  }
+
+.foto-perfil {
+  position: absolute; 
+  top: 50%;          
+  left: 50%;
+  transform: translate(-50%, -50%); 
+  width: 90%;      
+  z-index: 100;       
+  }
+
+
+main {
+    padding: 40px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-section-wrapper {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.page-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: normal;
+}
+
+.main-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+}
+
+.title {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: left;
+    width: 100%;
+}
+
+.contact-frame-container {
+    
+    border-style: solid;
+    border-width: 25px;
+    border-image-source: url('img/Marco contacto.png'); 
+    border-image-slice: 100;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+label {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: left; 
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 18px;
+    color: #333;
+    background-color: transparent;
+    border: 2px solid #333;
+    border-radius: 20px;
+    padding: 10px 15px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.submit-btn {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 22px;
+    color: #333;
+    background-color: #F88FBB;
+    border: 2px solid #333;
+    border-radius: 25px;
+    padding: 10px 30px;
+    cursor: pointer;
+    align-self: center;
+    margin-top: 20px;
+    transition: all 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #333;
+    color: #F88FBB;
+}
+
+@media (max-width: 480px) {
+    .contact-frame-container {
+        border-width: 15px;
+        border-image-slice: 25;
+        padding: 20px;
+    }
+    label {
+        font-size: 18px;
+    }
+    .submit-btn {
+        font-size: 18px;
+        padding: 8px 25px;
+    }
+}
+
+
+  /*--NEWSLETTER--*/
+
+.newsletter{
+  padding:59px 20px;
+}
+
+.newsletter-box{
+  max-width:1000px;
+  margin:auto;
+  border:3px solid #241E1E;
+  border-radius:999px;
+  display:flex;
+  overflow:hidden;
+  font-family: "Annie Use Your Telescope", cursive;
+}
+
+.newsletter-box span{
+  flex:1;
+  padding:18px 30px;
+  font-size:32px;
+}
+
+.newsletter-box button{
+  border:none;
+  border-left:3px solid #241E1E;
+  background:transparent;
+  padding:18px 40px;
+  font-size:32px;
+  cursor:pointer;
+  font-family: "Annie Use Your Telescope", cursive;
+  }
+
+
+/*--FOOTER-- */
+
+.footer{
+  text-align:center;
+  padding:35px 20px 55px;
+  font-family: "Annie Use Your Telescope", cursive;
+  font-size:28px;
+}
