@@ -214,10 +214,18 @@ textarea {
   font-family: "Annie Use Your Telescope", cursive;
 }
 
-.newsletter-box span{
+.newsletter-box input{
   flex:1;
   padding:18px 30px;
   font-size:32px;
+  width: 250px;
+  font-size: 30px;
+
+}
+
+.caja-texto::placeholder {
+  color: #241E1E;
+  font-style: cursive;
 }
 
 .newsletter-box button{
@@ -228,6 +236,13 @@ textarea {
   font-size:32px;
   cursor:pointer;
   font-family: "Annie Use Your Telescope", cursive;
+  transition-duration: 1s;
+  }
+
+  /* transicion */
+	.newsletter-box button:active,.newsletter-box button:hover{
+		background: #f7cbe0;
+
   }
 
 
