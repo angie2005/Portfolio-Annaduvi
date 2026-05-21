@@ -8,94 +8,115 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
-    
 </head>
 
 <body>
 
   <!-- HEADER -->
-
   <header class="header">
-
     <nav class="nav container">
-
-      <div class="menu">
-        <a href="LINK PARA NAVEGAR"><img src="img/Menu.png" alt="Menu"> </a>
+      <div class="menu" id="openMenu">
+        <img src="img/Menu.png" alt="Menu">
+      </div>
+      
+      <!-- MENU LATERAL -->
+      <div class="side-menu" id="sideMenu">
+        <div class="close-btn" id="closeMenu">✕</div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Destacado.html">Proyectos destacados</a></li>
+          <li><a href="DesarrolloWeb.html">Desarrollo Web</a></li>
+          <li><a href="Ilustracion.html">Galeria de ilustraciones</a></li>
+          <li><a href="Videos.html">Edición de videos</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
       </div>
 
       <h1 class="logo">ANNADUVI</h1>
 
       <div class="socials">
-
-        <a href="LINK PARA NAVEGAR"><img src="img/Buscar.png" alt="Menu"> </a>
-        <a href="https://www.instagram.com/"><img src="img/Instagram.png" alt="Menu"> </a>
-        <a href="LINK PARA NAVEGAR"><img src="img/Gmail.png" alt="Menu"> </a>
+        <a href="LINK PARA NAVEGAR"><img src="img/Buscar.png" alt="Buscar"> </a>
+        <a href="https://www.instagram.com/"><img src="img/Instagram.png" alt="Instagram"> </a>
+        <a href="LINK PARA NAVEGAR"><img src="img/Gmail.png" alt="Email"> </a>
       </div>
     </nav>
   </header>
 
   <div class="divider"></div>
-  <img src="img/Regla.png">
+  <img src="img/Regla.png" alt="Separador">
 
+  <!-- SECCIÓN DE CONTACTO -->
+  <main class="main-container">
+    <h1 class="title">Contacto</h1>
 
-  <div class="main-container">
-        <h1 class="title">Contacto</h1>
-
-        <div class="contact-frame-container">
-
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre">
-                </div>
-
-                <div class="form-group">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" name="apellido">
-                </div>
-
-                <div class="form-group">
-                    <label for="mail">Mail</label>
-                    <input type="email" id="mail" name="mail">
-                </div>
-
-                <div class="form-group">
-                    <label for="telefono">Teléfono</label>
-                    <input type="text" id="telefono" name="telefono">
-                </div>
-
-                <div class="form-group">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje"></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Enviar</button>
-            </form>
+    <div class="contact-frame-container">
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" required>
         </div>
+
+        <div class="form-group">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mail">Mail</label>
+          <input type="email" id="mail" name="mail" required>
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Teléfono</label>
+          <input type="text" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Enviar</button>
+      </form>
     </div>
+  </main>
 
-
-
-
-  
-  
   <!-- NEWSLETTER -->
-
-  <img src="img/Regla.png">
+  <img src="img/Regla.png" alt="Separador">
 
   <section class="newsletter">
+
     <div class="newsletter-box">
-      <input type="text" class="caja-texto" placeholder="Suscríbete para recibir novedades exclusivas">
-      <button>Suscríbete</button>
+  
+      <input 
+        type="email" 
+        placeholder="Escribe tu correo electrónico..."
+      >
+  
+      <button>Suscribirme</button>
+  
     </div>
+  
   </section>
 
   <!-- FOOTER -->
-
   <footer class="footer">
     © 2026 ANNADUVI
   </footer>
 
+  <script>
+    const openMenu = document.getElementById("openMenu");
+    const closeMenu = document.getElementById("closeMenu");
+    const sideMenu = document.getElementById("sideMenu");
+    
+    openMenu.addEventListener("click", () => {
+      sideMenu.classList.add("active");
+    });
+    
+    closeMenu.addEventListener("click", () => {
+      sideMenu.classList.remove("active");
+    });
+  </script>
+
 </body>
 </html>
-

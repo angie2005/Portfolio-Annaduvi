@@ -127,7 +127,7 @@ img{
 
 /* TELEFONOS */
 .phones {
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
 }
 
 /* LAPTOPS */
@@ -201,12 +201,6 @@ img{
   font-size:32px;
   cursor:pointer;
   font-family: "Annie Use Your Telescope", cursive;
-  transition-duration: 1s;
-  }
-
-  /* transicion */
-	.newsletter-box button:active,.newsletter-box button:hover{
-		background: #f7cbe0;
   }
 
 
