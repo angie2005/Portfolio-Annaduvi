@@ -19,8 +19,20 @@
 
     <nav class="nav container">
 
-      <div class="menu">
-        <a href="LINK PARA NAVEGAR"><img src="img/Menu.png" alt="Menu"> </a>
+      <div class="menu" id="openMenu">
+        <img src="img/Menu.png" alt="Menu">
+      </div>
+      
+      <div class="side-menu" id="sideMenu">
+        <div class="close-btn" id="closeMenu">✕</div>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Destacado.html">Proyectos destacados</a></li>
+          <li><a href="DesarrolloWeb.html">Desarrollo Web</a></li>
+          <li><a href="Ilustracion.html">Galeria de ilustraciones</a></li>
+          <li><a href="Videos.html">Edición de videos</a></li>
+          <li><a href="Contacto.html">Contacto</a></li>
+        </ul>
       </div>
 
       <h1 class="logo">ANNADUVI</h1>
@@ -35,14 +47,6 @@
   </header>
 
    <img src="img/Regla.png">
-
-    <!-- NAV -->
-  <nav class="nav">
-    <a class="active" href="#">Destacado</a>
-    <a href="#">Ilustración</a>
-    <a href="#">Videos</a>
-    <a href="#">Desarrollo Web</a>
-  </nav>
 
    <main>
 
@@ -76,25 +80,39 @@
       </div>
     </section>
 
+    <script>
+    const openMenu = document.getElementById("openMenu");
+    const closeMenu = document.getElementById("closeMenu");
+    const sideMenu = document.getElementById("sideMenu");
+    
+    openMenu.addEventListener("click", () => {
+      sideMenu.classList.add("active");
+    });
+    
+    closeMenu.addEventListener("click", () => {
+      sideMenu.classList.remove("active");
+    });
+  </script>
 
-
-
-
-
-
-
-
-
-<!-- NEWSLETTER -->
+ <!-- NEWSLETTER -->
 
   <img src="img/Regla.png">
 
   <section class="newsletter">
+
     <div class="newsletter-box">
-      <span>Suscríbete para recibir novedades exclusivas</span>
-      <button>Suscríbete</button>
+  
+      <input 
+        type="email" 
+        placeholder="Escribe tu correo electrónico..." required
+      >
+  
+      <button>Suscribirme</button>
+  
     </div>
+  
   </section>
+
 
   <!-- FOOTER -->
 
