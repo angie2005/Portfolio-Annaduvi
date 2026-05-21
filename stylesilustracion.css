@@ -201,6 +201,14 @@ img {
   background: rgba(255, 255, 255, 0.08);
 }
 
+.newsletter-box input:-webkit-autofill,
+.newsletter-box input:-webkit-autofill:hover, 
+.newsletter-box input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #111; /* Mantiene tu color de letra oscuro */
+  box-shadow: 0 0 0px 1000px transparent inset; /* Hack para volverlo transparente */
+  transition: background-color 5000s ease-in-out 0s; /* Retrasa el cambio de color infinito */
+}
+
 .newsletter-box input {
   flex: 1;
   border: none;
@@ -211,6 +219,8 @@ img {
   font-family: "Annie Use Your Telescope", cursive;
   color: #111;
   cursor: text;
+  border-top-left-radius: 999px; 
+  border-bottom-left-radius: 999px; 
 }
 
 .newsletter-box input::placeholder {
