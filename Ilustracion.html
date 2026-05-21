@@ -8,18 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap" rel="stylesheet">
-    
 </head>
 
 <body>
 
-  <!-- HEADER -->
-
   <header class="header">
-
     <nav class="nav container">
-
-     <div class="menu" id="openMenu">
+      
+      <div class="menu" id="openMenu">
         <img src="img/Menu.png" alt="Menu">
       </div>
       
@@ -38,59 +34,77 @@
       <h1 class="logo">ANNADUVI</h1>
 
       <div class="socials">
-
-        <a href="LINK PARA NAVEGAR"><img src="img/Buscar.png" alt="Menu"> </a>
-        <a href="https://www.instagram.com/"><img src="img/Instagram.png" alt="Menu"> </a>
-        <a href="LINK PARA NAVEGAR"><img src="img/Gmail.png" alt="Menu"> </a>
+        <a href="LINK PARA NAVEGAR"><img src="img/Buscar.png" alt="Buscar"> </a>
+        <a href="https://www.instagram.com/"><img src="img/Instagram.png" alt="Instagram"> </a>
+        <a href="LINK PARA NAVEGAR"><img src="img/Gmail.png" alt="Email"> </a>
       </div>
-
+      
     </nav>
   </header>
 
-   <img src="img/Regla.png">
+  <div class="divider"></div>
+  <img src="img/Regla.png" alt="Separador">
 
+  <main class="main-container">
+    <h1 class="title">Galería de Ilustraciones</h1> <div class="gallery-grid">
+      
+      <div class="gallery-item">
+          <img src="img/Marco cuadrado.png" class="marco" alt="Marco">
+          <img src="img/ilustracion1 (1).jpg" class="foto" alt="Ilustración Angie">
+      </div>
 
-  <div class="gallery">
-        <img src="img/Marco cuadrado.png"  class="marco" alt="Marco">
-        <img src="img/ilustracion1 (1).jpg" class="foto" alt="Perfil Angie">
+      <div class="gallery-item">
+          <img src="img/Marco cuadrado.png" class="marco" alt="Marco">
+          <img src="img/ilustracion1 (2).jpg" class="foto" alt="Ilustración Angie">
+      </div>
+
+      <div class="gallery-item">
+          <img src="img/Marco cuadrado.png" class="marco" alt="Marco">
+          <img src="img/ilustracion1 (3).JPG" class="foto" alt="Ilustración Angie">
+      </div>
+
+      <div class="gallery-item">
+          <img src="img/Marco cuadrado.png" class="marco" alt="Marco">
+          <img src="img/ilustracion1 (4).jpg" class="foto" alt="Ilustración Angie">
+      </div>
+
+      <div class="gallery-item">
+          <img src="img/Marco cuadrado.png" class="marco" alt="Marco">
+          <img src="img/ilustracion1 (5).jpg" class="foto" alt="Ilustración Angie">
+      </div>
+
+      <div class="gallery-item">
+          <img src="img/Marco cuadrado.png" class="marco" alt="Marco">
+          <img src="img/ilustracion1 (6).jpg" class="foto" alt="Ilustración Angie">
+      </div>
+
+      <div class="gallery-item">
+          <img src="img/Marco cuadrado.png" class="marco" alt="Marco">
+          <img src="img/ilustracion1 (7).jpg" class="foto" alt="Ilustración Angie">
+      </div>
+
+      <div class="gallery-item">
+          <img src="img/Marco cuadrado.png" class="marco" alt="Marco">
+          <img src="img/ilustracion1 (8).jpg" class="foto" alt="Ilustración Angie">
+      </div>
+
     </div>
+  </main>
 
-     <div class="gallery">
-        <img src="img/Marco cuadrado.png"  class="marco" alt="Marco">
-        <img src="img/ilustracion1 (2).jpg" class="foto" alt="Perfil Angie">
+  <img src="img/Regla.png" alt="Separador">
+
+  <section class="newsletter">
+    <div class="newsletter-box">
+      <input type="email" placeholder="Escribe tu correo electrónico..." required>
+      <button>Suscribirme</button>
     </div>
+  </section>
 
-    <div class="gallery">
-        <img src="img/Marco cuadrado.png"  class="marco" alt="Marco">
-        <img src="img/ilustracion1 (3).JPG" class="foto" alt="Perfil Angie">
-    </div>
+  <footer class="footer">
+    © 2026 ANNADUVI
+  </footer>
 
-    <div class="gallery">
-        <img src="img/Marco cuadrado.png"  class="marco" alt="Marco">
-        <img src="img/ilustracion1 (4).jpg" class="foto" alt="Perfil Angie">
-    </div>
-
-    <div class="gallery">
-        <img src="img/Marco cuadrado.png"  class="marco" alt="Marco">
-        <img src="img/ilustracion1 (5).jpg" class="foto" alt="Perfil Angie">
-    </div>
-
-     <div class="gallery">
-        <img src="img/Marco cuadrado.png"  class="marco" alt="Marco">
-        <img src="img/ilustracion1 (6).jpg" class="foto" alt="Perfil Angie">
-    </div>
-
-    <div class="gallery">
-        <img src="img/Marco cuadrado.png"  class="marco" alt="Marco">
-        <img src="img/ilustracion1 (7).jpg" class="foto" alt="Perfil Angie">
-    </div>
-
-    <div class="gallery">
-        <img src="img/Marco cuadrado.png"  class="marco" alt="Marco">
-        <img src="img/ilustracion1 (8).jpg" class="foto" alt="Perfil Angie">
-    </div>
-
-    <script>
+  <script>
     const openMenu = document.getElementById("openMenu");
     const closeMenu = document.getElementById("closeMenu");
     const sideMenu = document.getElementById("sideMenu");
@@ -103,32 +117,6 @@
       sideMenu.classList.remove("active");
     });
   </script>
-
-
-
-<!-- NEWSLETTER -->
-  <img src="img/Regla.png" alt="Separador">
-
-  <section class="newsletter">
-
-    <div class="newsletter-box">
-  
-      <input 
-        type="email" 
-        placeholder="Escribe tu correo electrónico..." required
-      >
-  
-      <button>Suscribirme</button>
-  
-    </div>
-  
-  </section>
-
-  <!-- FOOTER -->
-
-  <footer class="footer">
-    © 2026 ANNADUVI
-  </footer>
 
 </body>
 </html>
